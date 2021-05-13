@@ -24,7 +24,6 @@ repos:
       - id: check-symlinks
       - id: check-toml
       - id: check-xml
-      - id: check-yaml
       - id: detect-aws-credentials
         args: [
             "--allow-missing-credentials"

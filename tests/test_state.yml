@@ -1,7 +1,7 @@
 --- !!python/object:ledpi_controller.state.State
 bright: 1.0
 'on': false
-rgb:
-  - 255
-  - 255
-  - 255
+rgb: !!python/tuple
+- 255
+- 255
+- 255
