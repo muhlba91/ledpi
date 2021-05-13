@@ -11,7 +11,7 @@ class YamlProcessor:
 
     def load(self):
         with open(self.file) as stream:
-            return yaml.full_load(stream)
+            return yaml.unsafe_load(stream)
 
     def write(self, doc):
         with open(self.file, "w") as stream:
