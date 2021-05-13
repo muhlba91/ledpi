@@ -20,4 +20,7 @@ class YamlProcessor:
 
 class StateYamlProcessor(YamlProcessor):
     def load(self):
-        return State(super().load())
+        try:
+            return State(super().load())
+        except FileNotFoundError:
+            return State()

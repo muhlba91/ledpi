@@ -21,3 +21,7 @@ class TestStateYamlProcessor:
     def test_load(self):
         state = StateYamlProcessor("tests/test_state.yml").load()
         assert isinstance(state, State)
+
+    def test_load_no_file(self):
+        state = StateYamlProcessor("tests/unknown.yml").load()
+        assert isinstance(state, State)
